@@ -16,7 +16,6 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	
 	response := map[string]string{
         "RemoteAddr": r.RemoteAddr,
         "LocalIp": fmt.Sprintf("%s",GetOutboundIP()),
