@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	log.Print("Initialized")
+	log.Print("Initialized v2")
 	http.HandleFunc("/", handler)
 	log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
 }
@@ -53,7 +53,7 @@ func GetVersion() string {
 	val, ok := os.LookupEnv(envKey)
 
 	if !ok {
-		return "Without Version"
+		return "Without Version v4"
 	} else {
 		return val
 	}
